@@ -2,7 +2,7 @@
 This is my workload for the Module 3 Challenge
 
 The URL of the deployed application can be found here!: 
-https://gavobro.github.io/Module-1-Challenge-Gavin/02-Challenge/Develop/#social-media-marketing 
+https://gavobro.github.io/Do-you-Need-a-Password-/
 
 # What did I do?
 - Assigned variables to lowercase, uppercase, and number values.
