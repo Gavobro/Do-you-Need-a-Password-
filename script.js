@@ -44,25 +44,26 @@ function generatePassword () {
 // If the user says no to all checkboxes than no password can be created resulting in an ERROR message displaying in the display box.
     if (hasLowercase === false && hasUppercase === false && hasNumbers === false) {
       return "ERROR! You have not selected a single charcarter type. Please try again!" ;
-  };
+  }
 
 // Uses the values of either lowercase, uppercase or numbers if the user picks them.
-  if (hasLowercase) {
+    if (hasLowercase) {
     chosenValues = chosenValues.concat(lowercase) ;
   }
-  if (hasUppercase) {
+    if (hasUppercase) {
     chosenValues = chosenValues.concat(uppercase) ;
   }
-  if (hasNumbers) {
+    if (hasNumbers) {
     chosenValues = chosenValues.concat(numbers) ;
   }
   
 // Randomizes the values of the password.
   let yourGeneratedPassword = ""
-  for (let i = 0; i < lengthOfPassword; i++) {
-    let rng = [Math.floor (Math.random () * chosenValues.length) ] ;
-    yourGeneratedPassword += chosenValues[rng] ;
+    for (let i = 0; i < lengthOfPassword; i++) {
+      let rng = [Math.floor (Math.random () * chosenValues.length) ] ;
+      yourGeneratedPassword += chosenValues[rng] ;
   }
+
   return yourGeneratedPassword;
 }
 
